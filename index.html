@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="qr-generator">
+        <h2>Generate QR code</h2>
+        <div id="inputsection" class="sub_container_qrg">
+            <textarea name="data" id="data" placeholder="My Data is Here" rows="3"></textarea>
+            <button id="generateqr">Generate QR</button>
+            <button id="showScan">Scan QR Tool</button>
+        </div>
+        <div class="sub_container_qrg">
+            <div class="loader" id="loader"></div>
+            <img id="qrcode">
+            <p id="backbtn">Create Other QR</p>
+        </div>
+    </div>
+
+    <div class="qr-reader hidden">
+        <h2>Scan QR Code</h2>
+        <div class="sub_container">
+            <input type="file" accept="image/*">
+        </div>
+        <div class="sub_container">
+            <div class="loader" id="loader"></div>
+            <p id="result"></p>
+            <p id="showQR"></p>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
